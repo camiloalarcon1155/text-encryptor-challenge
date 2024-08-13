@@ -94,3 +94,26 @@ opacity: 1;
     color: var(--color-secundaria);
     font-size: 1.6rem;
 }
+
+.sectionTextoEncriptado{
+    padding: 6.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    text-align: center;
+    background-color: var(--color-primaria);
+    border-radius: 32px;
+    border: 2px solid black;
+}
+
+.sectionTextoEncriptado h1{
+    font-family: var(--fuente-inter);
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+
+.sectionTextoEncriptado p{
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    font-size: 1.6rem;
+}
