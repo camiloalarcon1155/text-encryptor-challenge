@@ -62,7 +62,6 @@ body{
     outline: none;
     overflow: auto hidden;
     resize: none;
-    box-sizing: border-box;
 }
 
 #textoIngresado::placeholder{
