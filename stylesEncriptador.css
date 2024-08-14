@@ -98,10 +98,10 @@ opacity: 1;
     border-radius: 2.4rem;
     width: 100%;
     height: 6.7rem;
-    background-color:  var(--color-dos);;
     color: var(--color-uno);
     font-size: 1.6rem;
     border: 2px solid var(--color-uno);
+    background-color: var(--color-dos);
 }
 
 .sectionTextoEncriptado{
