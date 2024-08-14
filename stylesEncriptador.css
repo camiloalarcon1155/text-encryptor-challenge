@@ -111,6 +111,7 @@ opacity: 1;
 .divTextoEncriptado{
     padding: 3.2rem;
     margin-top: 3.7rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
@@ -139,6 +140,7 @@ opacity: 1;
 .divMostrarTextoEncriptado{
     padding: 3.2rem;
     margin-top: 3.7rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
@@ -152,7 +154,7 @@ opacity: 1;
 .divMostrarTextoEncriptado p{
     font-family: var(--fuente-inter);
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: 3.2rem;
     line-height: 3.6rem;
     color: var(--color-tres);
 }
