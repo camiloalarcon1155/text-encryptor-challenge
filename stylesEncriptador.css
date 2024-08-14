@@ -18,6 +18,10 @@ html {
     font-size: 62.5%; 
 }
 
+.inactive{
+    display: none;
+}
+
 body{
     background-color:  var(--color-dos);
 }
@@ -104,7 +108,7 @@ opacity: 1;
     background-color: var(--color-dos);
 }
 
-.sectionTextoEncriptado{
+.divTextoEncriptado{
     padding: 3.2rem;
     margin-top: 3.7rem;
     display: flex;
@@ -116,7 +120,7 @@ opacity: 1;
     
 }
 
-.sectionTextoEncriptado h1{
+.divTextoEncriptado h1{
     font-family: var(--fuente-inter);
     font-weight: 700;
     font-size: 2.4rem;
@@ -124,7 +128,7 @@ opacity: 1;
     color: var(--color-quinto);
 }
 
-.sectionTextoEncriptado p{
+.divTextoEncriptado p{
     font-family: var(--fuente-inter);
     font-weight: 400;
     font-size: 1.6rem;
