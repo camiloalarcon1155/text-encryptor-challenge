@@ -41,8 +41,8 @@ body{
 }
 
 .divTextoIngresado{
-    padding: 25px 0px 100px 0px;
-    
+    padding: 25px 0px 240px 0px;
+    height: auto;
 }
 
 #textoIngresado{
@@ -106,7 +106,7 @@ opacity: 1;
 
 .sectionTextoEncriptado{
     padding: 3.2rem;
-    margin-top: 5.7rem;
+    margin-top: 3.7rem;
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
