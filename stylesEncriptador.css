@@ -156,7 +156,16 @@ opacity: 1;
 }
 
 
-.divMostrarTextoEncriptado p{
+/* .divMostrarTextoEncriptado p{
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: var(--color-tres);
+} */
+
+
+.pMostrarTextoTratado{
     font-family: var(--fuente-inter);
     font-weight: 400;
     font-size: 2.4rem;
