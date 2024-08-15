@@ -6,47 +6,24 @@ const textoParaEncriptar = document.querySelector('.textoParaEncriptar');
 const pMostrarTexto = document.querySelector('.pMostrarTextoTratado');
 const sectionTextoEncriptadoNoEncontrado = document.querySelector('.sectionTextoEncriptado');
 const sectionTextoEncriptadoEncontrado = document.querySelector('.sectionMostrarTextoEncriptado');
-
+const btnCopiarTextoTratado = document.querySelector('.buttonCopiarTexto');
 
 
 // Evento de input para ajustar la altura cuando el usuario escribe
 textarea.addEventListener('input', autoResize);
-btnEncriptar.addEventListener('click', encriptarTexto)
+btnEncriptar.addEventListener('click', encriptarTexto);
+btnCopiarTextoTratado.addEventListener('click', copiarTextoTratado)
 
 
-
-
-
-
-
-
-
-
-// Función para ajustar la altura del textarea
+// Función para ajustar la altura del textarea segun el contenido
 function autoResize() {
-    textarea.style.height = 'auto'; // Restablecer la altura para calcular la nueva altura
-    textarea.style.height = textarea.scrollHeight + 'px'; // Ajustar la altura según el contenido
+    textarea.style.height = 'auto';
+    textarea.style.height = textarea.scrollHeight + 'px';
 }
+  
 
-/* function activarMensajeEncriptado() {
-    var cosa = textoParaEncriptar.value;
-   if (cosa) {
-        sectionTextoEncriptadoNoEncontrado.classList.add('inactive'); 
-       sectionTextoEncriptadoEncontrado.classList.remove('inactive');
-        console.log(`${textoParaEncriptar.value}SI hay valor en el texa`);
-    } else {
-        sectionTextoEncriptadoEncontrado.classList.add('inactive');
-       sectionTextoEncriptadoNoEncontrado.classList.remove('inactive');
-       console.log('no hay valor en el texa');
-    } 
-}
-
-activarMensajeEncriptado() */
-
-    
 function encriptarTexto() {
     
-     
     if (textoParaEncriptar.value) {
         console.log(`${textoParaEncriptar.value}`)
         pMostrarTexto.innerText = textoParaEncriptar.value;
@@ -58,6 +35,22 @@ function encriptarTexto() {
         sectionTextoEncriptadoNoEncontrado.classList.remove('inactive');
         console.log(`no hay nada en el textarea`);
     } 
-    
 }
 
+
+function copiarTextoTratado() {
+    var textoParaSerEncriptado = pMostrarTexto.innerText;
+
+    //creamos un textarea para poder guardar el texto de nuestro p y aplicar la funcion de copiado de texto, ya que no se puede aplicar esta funcion para elementos tipo p.
+    var textareaTemporal = document.createElement('textarea');
+    textareaTemporal.value = textoParaSerEncriptado;
+    console.log(`${textarea.value} se copio`)
+    textareaTemporal.style.position = "absolute";
+    textareaTemporal.style.left = "-9999px";
+    document.body.appendChild(textareaTemporal);
+    textareaTemporal.select();
+    textareaTemporal.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(textareaTemporal.value);
+    document.body.removeChild(textareaTemporal);
+    alert("Copied the text: " + textareaTemporal.value);
+}
