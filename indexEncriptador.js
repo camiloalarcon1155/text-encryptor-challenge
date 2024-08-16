@@ -27,8 +27,33 @@ function autoResize() {
 function encriptarTexto() {
     
     if (textoParaEncriptar.value) {
+
+        var textoSinEncriptar = textoParaEncriptar.value;
+        arregloDeTexto = textoSinEncriptar.split('');
+        console.log(arregloDeTexto);
+        
+        const textoCambiado = arregloDeTexto.map(function(letra) {
+            /* return letra === 'a' ? 'ai' : letra; */
+                if (letra === 'a') {
+                    return 'ai';
+                } else if (letra === 'e') {
+                    return 'enter';
+                } else if (letra === 'i') {
+                    return 'imes';
+                } else if (letra === 'o') {
+                    return 'ober';
+                } else if (letra === 'u') {
+                    return 'ufat';
+                } else {
+                    return letra;
+                }
+        });
+
+        const textoEncriptado = textoCambiado.join('');
+        console.log(textoEncriptado);
         console.log(`${textoParaEncriptar.value}`)
-        pMostrarTexto.innerText = textoParaEncriptar.value;
+        // pMostrarTexto.innerText = textoParaEncriptar.value;
+        pMostrarTexto.innerText = textoEncriptado;
         sectionTextoEncriptadoNoEncontrado.classList.add('inactive'); 
         sectionTextoEncriptadoEncontrado.classList.remove('inactive');
         console.log(`${textoParaEncriptar.value} se encuentra en el textarea`);
@@ -39,19 +64,39 @@ function encriptarTexto() {
     } 
 }
 
+
 function desencriptarTexto() {
     
     if (textoParaEncriptar.value) {
-        console.log(`${textoParaEncriptar.value}`)
-        pMostrarTexto.innerText = textoParaEncriptar.value;
-        sectionTextoEncriptadoNoEncontrado.classList.add('inactive'); 
-        sectionTextoEncriptadoEncontrado.classList.remove('inactive');
-        console.log(`${textoParaEncriptar.value} se encuentra en el textarea`);
+
+        let textoParaTratar = textoParaEncriptar.value;
+
+        const reemplazos = {
+            'ai': 'a',
+            'enter': 'e',
+            'imes': 'i',
+            'ober': 'o',
+            'ufat': 'u'
+        };
+
+        let textoCambiado = textoParaTratar;
+
+        for (let [clave, valor] of Object.entries(reemplazos)) {
+            textoCambiado = textoCambiado.replaceAll(clave, valor);
+        }
+
+        console.log(textoCambiado); 
+
+            console.log(textoCambiado);
+            pMostrarTexto.innerText = textoCambiado;
+            sectionTextoEncriptadoNoEncontrado.classList.add('inactive'); 
+            sectionTextoEncriptadoEncontrado.classList.remove('inactive');
+            console.log(`${textoParaEncriptar.value} se encuentra en el textarea`);
     } else {
-        sectionTextoEncriptadoEncontrado.classList.add('inactive');
-        sectionTextoEncriptadoNoEncontrado.classList.remove('inactive');
-        console.log(`no hay nada en el textarea`);
-    } 
+            sectionTextoEncriptadoEncontrado.classList.add('inactive');
+            sectionTextoEncriptadoNoEncontrado.classList.remove('inactive');
+            console.log(`no hay nada en el textarea`);
+        } 
 }
 
 
