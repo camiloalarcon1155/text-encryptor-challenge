@@ -15,6 +15,19 @@ textarea.addEventListener('input', autoResize);
 btnEncriptar.addEventListener('click', encriptarTexto);
 btnDesencriptar.addEventListener('click', desencriptarTexto);
 btnCopiarTextoTratado.addEventListener('click', copiarTextoTratado)
+textarea.addEventListener('input', function() {
+    ValidarTexto(this);
+});
+
+function ValidarTexto(textarea) {
+    const isTextoValido = textarea.value.match(/^[a-z\s]*$/);
+
+    if (!isTextoValido) {
+        alert('solo minusculas y espacios')
+        textarea.value = textarea.value.slice(0, -1);
+    } 
+}
+
 
 
 // Función para ajustar la altura del textarea segun el contenido
@@ -115,3 +128,5 @@ function copiarTextoTratado() {
     navigator.clipboard.writeText(textareaTemporal.value);
     document.body.removeChild(textareaTemporal);
 }
+
+
