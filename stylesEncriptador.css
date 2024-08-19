@@ -31,8 +31,7 @@ body{
 
 .header{
     padding: 8% 0% 8% 4%;
-    width: 37.5rem;
-    height: 9.6rem;
+    width: 100%
 }
 
 .header img{
@@ -193,13 +192,13 @@ opacity: 1;
 }
 
 
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
+@media only screen and (min-width: 600px) and (max-width: 900px) {
 .divBotonesEncriptado{ 
   flex-direction: row;
 }
 }
 
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 900px) {
   /* Estilos para escritorio */
 }
