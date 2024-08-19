@@ -30,7 +30,7 @@ body{
 }
 
 .header{
-    padding: 32px 0px 32px 16px;
+    padding: 8% 0% 8% 4%;
     width: 37.5rem;
     height: 9.6rem;
 }
@@ -41,7 +41,7 @@ body{
 }
 
 .main{
-     padding: 0 1.6rem;   
+     padding: 0 4%;   
      display: flex;
      flex: 1;
      flex-direction: column;
@@ -190,4 +190,16 @@ opacity: 1;
     font-family: var(--fuente-inter);
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+.divBotonesEncriptado{ 
+  flex-direction: row;
+}
+}
+
+
+@media only screen and (min-width: 1025px) {
+  /* Estilos para escritorio */
 }
