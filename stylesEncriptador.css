@@ -16,12 +16,6 @@
 
 html {
     font-size: 62.5%; 
-    /* height: 100vh; */
-    
-}
-
-.inactive{
-    display: none;
 }
 
 body{
@@ -29,6 +23,10 @@ body{
     display: flex;
     flex-direction: column;
     height: 100vh;
+}
+
+.inactive{
+    display: none;
 }
 
 .header{
@@ -49,7 +47,6 @@ body{
      flex-direction: column;
      gap: 2rem;
      height: 100%;
-     /* height: 100vh; */
      overflow-y: auto;
 }
 
@@ -131,7 +128,6 @@ opacity: 1;
     text-align: center;
     background-color: var(--color-cuatro);
     border-radius: 32px;
-    
 }
 
 .divTextoEncriptado h1{
@@ -160,18 +156,7 @@ opacity: 1;
     text-align: center;
     background-color: var(--color-cuatro);
     border-radius: 32px;
-    
 }
-
-
-/* .divMostrarTextoEncriptado p{
-    font-family: var(--fuente-inter);
-    font-weight: 400;
-    font-size: 2.4rem;
-    line-height: 3.6rem;
-    color: var(--color-tres);
-} */
-
 
 .pMostrarTextoTratado{
     font-family: var(--fuente-inter);
@@ -179,9 +164,6 @@ opacity: 1;
     font-size: 2.4rem;
     line-height: 3.6rem;
     color: var(--color-tres);
-
-    /* width: 100%; 
-    height: 200px;  */
     overflow-y: auto; 
     word-wrap: break-word; 
     white-space: pre-wrap; 

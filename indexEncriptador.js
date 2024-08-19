@@ -1,5 +1,3 @@
-console.log(` eres un gran tipo y mereces ser fullStack`);
-
 const textarea = document.getElementById('textoIngresado');
 const btnEncriptar = document.querySelector('.buttonEncriptar');
 const btnDesencriptar = document.querySelector('.buttonDesencriptar');
@@ -19,15 +17,15 @@ textarea.addEventListener('input', function() {
     ValidarTexto(this);
 });
 
+//Funcion para admitir solamente letras minusculas o espacios, si no borra elemento mal escrito y crea un alert
 function ValidarTexto(textarea) {
     const isTextoValido = textarea.value.match(/^[a-z\s]*$/);
 
     if (!isTextoValido) {
-        alert('solo minusculas y espacios')
+        alert('solo minusculas y espacios');
         textarea.value = textarea.value.slice(0, -1);
     } 
 }
-
 
 
 // Función para ajustar la altura del textarea segun el contenido
@@ -38,15 +36,13 @@ function autoResize() {
   
 
 function encriptarTexto() {
-    
-    if (textoParaEncriptar.value) {
+    const isTextoValido = textarea.value.match(/^[a-z\s]*$/);
+    if (textoParaEncriptar.value && isTextoValido) {
 
         var textoSinEncriptar = textoParaEncriptar.value;
         arregloDeTexto = textoSinEncriptar.split('');
-        console.log(arregloDeTexto);
-        
         const textoCambiado = arregloDeTexto.map(function(letra) {
-            /* return letra === 'a' ? 'ai' : letra; */
+        
                 if (letra === 'a') {
                     return 'ai';
                 } else if (letra === 'e') {
@@ -63,24 +59,21 @@ function encriptarTexto() {
         });
 
         const textoEncriptado = textoCambiado.join('');
-        console.log(textoEncriptado);
-        console.log(`${textoParaEncriptar.value}`)
-        // pMostrarTexto.innerText = textoParaEncriptar.value;
         pMostrarTexto.innerText = textoEncriptado;
         sectionTextoEncriptadoNoEncontrado.classList.add('inactive'); 
         sectionTextoEncriptadoEncontrado.classList.remove('inactive');
-        console.log(`${textoParaEncriptar.value} se encuentra en el textarea`);
+
     } else {
+        alert('solo minusculas con espacios');
         sectionTextoEncriptadoEncontrado.classList.add('inactive');
         sectionTextoEncriptadoNoEncontrado.classList.remove('inactive');
-        console.log(`no hay nada en el textarea`);
     } 
 }
 
 
 function desencriptarTexto() {
-    
-    if (textoParaEncriptar.value) {
+    const isTextoValido = textarea.value.match(/^[a-z\s]*$/);
+    if (textoParaEncriptar.value && isTextoValido) {
 
         let textoParaTratar = textoParaEncriptar.value;
 
@@ -97,18 +90,14 @@ function desencriptarTexto() {
         for (let [clave, valor] of Object.entries(reemplazos)) {
             textoCambiado = textoCambiado.replaceAll(clave, valor);
         }
-
-        console.log(textoCambiado); 
-
-            console.log(textoCambiado);
             pMostrarTexto.innerText = textoCambiado;
             sectionTextoEncriptadoNoEncontrado.classList.add('inactive'); 
             sectionTextoEncriptadoEncontrado.classList.remove('inactive');
-            console.log(`${textoParaEncriptar.value} se encuentra en el textarea`);
+            
     } else {
+            alert('solo minusculas con espacios');
             sectionTextoEncriptadoEncontrado.classList.add('inactive');
             sectionTextoEncriptadoNoEncontrado.classList.remove('inactive');
-            console.log(`no hay nada en el textarea`);
         } 
 }
 
@@ -116,10 +105,9 @@ function desencriptarTexto() {
 function copiarTextoTratado() {
     var textoParaSerEncriptado = pMostrarTexto.innerText;
 
-    //creamos un textarea para poder guardar el texto de nuestro p y aplicar la funcion de copiado de texto, ya que no se puede aplicar esta funcion para elementos tipo p.
+    //creamos un textarea para poder guardar el texto de nuestro p y aplicar la funcion de copiado de texto, ya que no se puede aplicar este metodo para elementos tipo p.
     var textareaTemporal = document.createElement('textarea');
     textareaTemporal.value = textoParaSerEncriptado;
-    console.log(`${textarea.value} se copio`)
     textareaTemporal.style.position = "absolute";
     textareaTemporal.style.left = "-9999px";
     document.body.appendChild(textareaTemporal);
