@@ -192,13 +192,13 @@ opacity: 1;
 }
 
 
-@media only screen and (min-width: 600px) and (max-width: 900px) {
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
 .divBotonesEncriptado{ 
   flex-direction: row;
 }
 }
 
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1440px) {
   /* Estilos para escritorio */
 }
