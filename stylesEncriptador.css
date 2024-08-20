@@ -40,6 +40,10 @@ body{
     height: 4.8rem;
 }
 
+.divIconoEmuladorHeader{
+    display: none;
+}
+
 .main{
      padding: 0 1.6rem;   
      display: flex;
@@ -203,9 +207,12 @@ opacity: 1;
 }
 
 
-@media only screen and (min-width: 768px) and (max-width: 1439px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
         .divBotonesEncriptado{ 
             flex-direction: row;
+        }
+        .divIconoEmuladorHeader{
+            display: none;
         }
         .main{
             padding: 0 3.2rem;
@@ -219,16 +226,18 @@ opacity: 1;
 }
 
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1024px) {
     
     .header{
-            padding: 4rem 0 4rem 8rem;
-            z-index: 1;
+    display: none;
+    }
+    .divIconoEmuladorHeader{
+    display: block;
     }
 
     .main{
         flex-direction: row;
-        padding: 0 4rem;
+        padding: 4rem 4rem 4rem 4rem;
         gap: 4rem;
     }
 
@@ -245,8 +254,7 @@ opacity: 1;
     .sectionTextoEncriptado{
         position: relative;
         width: 33.4%;
-        margin-top: -20px; 
-        z-index: 10;
+        margin-top: -40px;
     }
 
    /*  .divTextoEncriptado{
