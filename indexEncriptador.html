@@ -13,14 +13,15 @@
 </head>
 <body>
     <header class="header">
-        <img src="./iconos/Vector.png" alt="logoDeEncriptador">
+        <img src="./iconos/Vector.png" class="iconoEncriptador" alt="logoDeEncriptador">
     </header>
+
     <main class="main">
+        <div class="divSeccionIngresarTexto">
+        <div class="divIconoEmuladorHeader">
+            <img src="./iconos/Vector.png" class="iconoEncriptador"  alt="logoDeEncriptador">
+        </div>
         <section class="sectionIngresarTexto">
-            <div class="divIconoEmuladorHeader">
-                <img src="./iconos/Vector.png" alt="logoDeEncriptador">
-            </div>
-            
             <div class="divTextoIngresado">
                 <label for="textoIngresado"></label>
                 <textarea name="texto" id="textoIngresado" class="textoParaEncriptar" placeholder="Ingrese el texto aqui"></textarea>
@@ -35,10 +36,13 @@
                 <button class="buttonDesencriptar">Desencriptar</button>
             </div>
         </section>
+        </div>
 
             <section class="sectionTextoEncriptado">
                 <div class="divTextoEncriptado">
-                    <img src="./iconos/1.png" class="imgTextoNoEncontrado" alt="Icono buscando mensaje encriptado">
+                    <div class="divImgTextoNoEncontrado">
+                        <img src="./iconos/1.png" class="imgTextoNoEncontrado" alt="Icono buscando mensaje encriptado">
+                    </div>
                     <h1>Ningún mensaje fue encrontrado</h1>
                     <p>Ingresa el texto que desees escriptar o desencriptar</p>
                 </div>
@@ -53,8 +57,6 @@
                 </div>
             </section>
     </main>
-
-
 
     <footer class="footer">
         <p>Desarrollado por Camilo Alarcón</p>

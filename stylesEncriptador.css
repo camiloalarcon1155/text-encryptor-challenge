@@ -35,7 +35,7 @@ body{
     height: 9.6rem;
 }
 
-.header img{
+.iconoEncriptador{
     width:3.2rem;
     height: 4.8rem;
 }
@@ -126,6 +126,12 @@ opacity: 1;
     font-size: 1.6rem;
     border: 2px solid var(--color-uno);
     background-color: var(--color-dos);
+}
+
+.divImgTextoNoEncontrado{
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
 }
 
 .imgTextoNoEncontrado{
@@ -229,42 +235,40 @@ opacity: 1;
 @media only screen and (min-width: 1024px) {
     
     .header{
-    display: none;
+        display: none;
     }
     .divIconoEmuladorHeader{
-    display: block;
+        display: block;
+        padding-left: 4rem;
     }
-
     .main{
         flex-direction: row;
         padding: 4rem 4rem 4rem 4rem;
         gap: 4rem;
     }
-
-    .divBotonesEncriptado{ 
-            flex-direction: row;
-    }
-
-    .sectionIngresarTexto{
+    .divSeccionIngresarTexto{
         width: 66.6%;
+        display: flex;
+        flex-direction: column;
+    }
+    .divBotonesEncriptado{ 
+        flex-direction: row;
+    }
+    .sectionIngresarTexto{
+       /*  width: 66.6%; */
         padding-left: 20rem;
         padding-right: 4rem;
     }
-
     .sectionTextoEncriptado{
         position: relative;
         width: 33.4%;
         margin-top: -40px;
     }
-
-   /*  .divTextoEncriptado{
-       
-    } */
-
     .sectionMostrarTextoEncriptado{
+        position: relative;
         width: 33.4%;
+        margin-top: -40px;
     }
-
     .imgTextoNoEncontrado{
             display: block;
     }
