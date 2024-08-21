@@ -273,6 +273,7 @@ opacity: 1;
     }
     .divTextoEncriptado{
         height: 100%;
+        justify-content: center;
     }
     .imgTextoNoEncontrado{
         display: block;
