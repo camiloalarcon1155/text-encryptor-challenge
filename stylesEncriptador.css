@@ -251,6 +251,9 @@ opacity: 1;
         display: flex;
         flex-direction: column;
     }
+    .divTextoIngresado{
+        height: 60vh;
+    }
     .divBotonesEncriptado{ 
         flex-direction: row;
     }
@@ -259,11 +262,10 @@ opacity: 1;
         padding-left: 20rem;
         padding-right: 4rem;
     }
-    .sectionTextoEncriptado{
-        position: relative;
+    .sectionTextoEncriptado {
         width: 33.4%;
-        margin-top: -40px;
-        height: 100%;
+        display: flex;
+        flex-direction: column;
     }
     .sectionMostrarTextoEncriptado{
         position: relative;
@@ -271,9 +273,11 @@ opacity: 1;
         margin-top: -40px;
         height: 100%;
     }
-    .divTextoEncriptado{
+    .divTextoEncriptado {
         height: 100%;
         justify-content: center;
+        margin-top: unset;
+        margin-bottom: unset;
     }
     .imgTextoNoEncontrado{
         display: block;

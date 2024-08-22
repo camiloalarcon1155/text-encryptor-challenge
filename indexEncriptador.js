@@ -30,8 +30,11 @@ function ValidarTexto(textarea) {
 
 // Función para ajustar la altura del textarea segun el contenido
 function autoResize() {
-    textarea.style.height = 'auto';
-    textarea.style.height = textarea.scrollHeight + 'px';
+    let anchoViewport = window.innerWidth < 1024;
+    if (anchoViewport) {
+        textarea.style.height = 'auto';
+        textarea.style.height = textarea.scrollHeight + 'px';
+    }
 }
   
 
