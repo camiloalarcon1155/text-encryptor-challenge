@@ -54,11 +54,6 @@ html {
      overflow-y: auto;
 }
 
-.sectionEncriptado{
-    display: flex;
-    flex-direction: column;
-}
-
 .text-input__field{
     padding: 25px 0px 25px 0px;
     height: auto;
@@ -80,8 +75,8 @@ html {
 }
 
 #textoIngresado::placeholder{
-color: var(--color-uno);
-opacity: 1;
+    color: var(--color-uno);
+    opacity: 1;
 }
 
 .text-input__warning{
@@ -150,7 +145,7 @@ opacity: 1;
     border-radius: 32px;
 }
 
-.result__tittle{
+.result__title{
     font-family: var(--fuente-inter);
     font-weight: 700;
     font-size: 2.4rem;
@@ -258,7 +253,6 @@ opacity: 1;
         flex-direction: row;
     }
     .text-input{
-       /*  width: 66.6%; */
         padding-left: 20rem;
         padding-right: 4rem;
     }
@@ -268,8 +262,6 @@ opacity: 1;
     }
     .show-result {
         width: 33.4%;
-       /*  display: flex;
-        flex-direction: column; */
     }
     .result {
         height: 100%;
@@ -283,8 +275,6 @@ opacity: 1;
      .show-encryption{
         /* position: relative; */
         width: 33.4%;
-        /* margin-top: -40px;
-        height: 100%; */
     }
     .out-result{
         height: auto;

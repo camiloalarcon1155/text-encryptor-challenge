@@ -5,29 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
+    <link 
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <title>EncriptadorBCAH</title>
     <link rel="stylesheet" href="./stylesEncriptador.css">
 </head>
 
+
 <body class="app">
+
 
     <header class="page-header">
         <img src="./iconos/Vector.png" class="page-header__icon" alt="logoDeEncriptador">
     </header>
+
 
     <main class="page-main">
         <section class="encrypt">
             <div class="encrypt__simulate-header">
                 <img src="./iconos/Vector.png" class="encrypt__img"  alt="logoDeEncriptador">
             </div>
+
             <section class="text-input">
                 <div class="text-input__field">
                     <label for="textoIngresado"></label>
-                    <textarea name="texto" id="textoIngresado" class="text-input__field-textarea" placeholder="Ingrese el texto aqui"></textarea>
+                    <textarea name="texto" id="textoIngresado" class="text-input__field-textarea" placeholder="Ingrese el texto aquí"></textarea>
                 </div>
+
                 <div class="text-input__warning">
                     <img src="./iconos/bi_exclamation-circle-fill.png" class="text-input__warning-icon" alt="Icono de advertencia">
                     <p class="text-input__warning-message">Solo letras minúsculas y sin acentos</p>
@@ -40,29 +45,33 @@
             </section>
         </section>
 
+
         <section class="show-result">
             <div class="result">
                 <div class="result__icon-container">
                     <img src="./iconos/1.png" class="result__img" alt="Icono buscando mensaje encriptado">
                 </div>
-                <h1 class="result__tittle">Ningún mensaje fue encrontrado</h1>
+                <h1 class="result__title">Ningún mensaje fue encrontrado</h1>
                 <p class="result__message">Ingresa el texto que desees escriptar o desencriptar</p>
             </div>
         </section>
         
+
         <section class="show-encryption inactive">
             <div class="out-result">
                 <p class="out-result__message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur aspernatur
                     molestias, non eaque quo, nostrum aperiam accusantium, illo fuga porro sapiente sunt. Minus perspiciatis
-                    quidem laborum eius excepturi, rem inventore.</p>
+                    quidem laborum eius excepturi, rem inventore.</p>                  
                 <button class="out-result__button--copy">Copiar</button>
             </div>
         </section>
     </main>
 
+
     <footer class="page-footer">
-        <p>Desarrollado por Camilo Alarcón</p>
+        <p class="page-footer__text" >Desarrollado por Camilo Alarcón</p>
     </footer>
+
     
     <script src="./indexEncriptador.js"></script>
 </body>
