@@ -11,54 +11,56 @@
     <title>EncriptadorBCAH</title>
     <link rel="stylesheet" href="./stylesEncriptador.css">
 </head>
-<body class="page">
-    <header class="page__header">
-        <img src="./iconos/Vector.png" class="page__header-icono" alt="logoDeEncriptador">
+
+<body class="app">
+
+    <header class="page-header">
+        <img src="./iconos/Vector.png" class="page-header__icon" alt="logoDeEncriptador">
     </header>
 
-    <main class="main">
-        <section class="seccionIngresarTexto">
-        <div class="divIconoEmuladorHeader">
-            <img src="./iconos/Vector.png" class="iconoEncriptador"  alt="logoDeEncriptador">
-        </div>
-        <section class="sectionIngresarTexto">
-            <div class="divTextoIngresado">
-                <label for="textoIngresado"></label>
-                <textarea name="texto" id="textoIngresado" class="textoParaEncriptar" placeholder="Ingrese el texto aqui"></textarea>
+    <main class="page-main">
+        <section class="encrypt">
+            <div class="encrypt__simulate-header">
+                <img src="./iconos/Vector.png" class="encrypt__img"  alt="logoDeEncriptador">
             </div>
-            <div class="divAdvertencia">
-                <img src="./iconos/bi_exclamation-circle-fill.png" alt="Icono de advertencia">
-                <p class="pAdvertencia">Solo letras minúsculas y sin acentos</p>
-            </div>
+            <section class="text-input">
+                <div class="text-input__field">
+                    <label for="textoIngresado"></label>
+                    <textarea name="texto" id="textoIngresado" class="text-input__field-textarea" placeholder="Ingrese el texto aqui"></textarea>
+                </div>
+                <div class="text-input__warning">
+                    <img src="./iconos/bi_exclamation-circle-fill.png" class="text-input__warning-icon" alt="Icono de advertencia">
+                    <p class="text-input__warning-message">Solo letras minúsculas y sin acentos</p>
+                </div>
 
-            <div class="divBotonesEncriptado">
-                <button class="buttonEncriptar">Encriptar</button>
-                <button class="buttonDesencriptar">Desencriptar</button>
-            </div>
-        </section>
-        </section>
-
-            <section class="sectionTextoEncriptado">
-                <div class="divTextoEncriptado">
-                    <div class="divImgTextoNoEncontrado">
-                        <img src="./iconos/1.png" class="imgTextoNoEncontrado" alt="Icono buscando mensaje encriptado">
-                    </div>
-                    <h1>Ningún mensaje fue encrontrado</h1>
-                    <p>Ingresa el texto que desees escriptar o desencriptar</p>
+                <div class="text-input__buttons">
+                    <button class="text-input__button--encrypt">Encriptar</button>
+                    <button class="text-input__button--decrypt">Desencriptar</button>
                 </div>
             </section>
-            
-            <section class="sectionMostrarTextoEncriptado inactive">
-                <div class="divMostrarTextoEncriptado">
-                    <p class="pMostrarTextoTratado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur aspernatur
-                        molestias, non eaque quo, nostrum aperiam accusantium, illo fuga porro sapiente sunt. Minus perspiciatis
-                        quidem laborum eius excepturi, rem inventore.</p>
-                    <button class="buttonCopiarTexto">Copiar</button>
+        </section>
+
+        <section class="show-result">
+            <div class="result">
+                <div class="result__icon-container">
+                    <img src="./iconos/1.png" class="result__img" alt="Icono buscando mensaje encriptado">
                 </div>
-            </section>
+                <h1 class="result__tittle">Ningún mensaje fue encrontrado</h1>
+                <p class="result__message">Ingresa el texto que desees escriptar o desencriptar</p>
+            </div>
+        </section>
+        
+        <section class="show-encryption inactive">
+            <div class="out-result">
+                <p class="out-result__message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur aspernatur
+                    molestias, non eaque quo, nostrum aperiam accusantium, illo fuga porro sapiente sunt. Minus perspiciatis
+                    quidem laborum eius excepturi, rem inventore.</p>
+                <button class="out-result__button--copy">Copiar</button>
+            </div>
+        </section>
     </main>
 
-    <footer class="page__footer">
+    <footer class="page-footer">
         <p>Desarrollado por Camilo Alarcón</p>
     </footer>
     

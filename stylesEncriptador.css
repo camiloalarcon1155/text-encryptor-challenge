@@ -18,7 +18,7 @@ html {
     font-size: 62.5%; 
 }
 
-.page{
+.app{
     background-color:  var(--color-dos);
     display: flex;
     flex-direction: column;
@@ -29,22 +29,22 @@ html {
     display: none;
 }
 
-.page__header{
+.page-header{
     padding: 3.2rem 0 3.2rem 1.6rem;
     width: 100%;
     height: 9.6rem;
 }
 
-.page__header-icono{
+.page-header__icon{
     width:3.2rem;
     height: 4.8rem;
 }
 
-.divIconoEmuladorHeader{
+.encrypt__simulate-header{
     display: none;
 }
 
-.main{
+.page-main{
      padding: 0 1.6rem;   
      display: flex;
      flex: 1;
@@ -59,7 +59,7 @@ html {
     flex-direction: column;
 }
 
-.divTextoIngresado{
+.text-input__field{
     padding: 25px 0px 25px 0px;
     height: auto;
 }
@@ -84,7 +84,7 @@ color: var(--color-uno);
 opacity: 1;
 }
 
-.divAdvertencia{
+.text-input__warning{
     display: flex;
     align-items: center;
     line-height: 1.8rem;
@@ -92,20 +92,20 @@ opacity: 1;
     padding-bottom: 1.6rem;
 }
 
-.pAdvertencia{
+.text-input__warning-message{
     font-family: var(--fuente-inter);
     font-weight: 400;
     color: var(--color-tres);
     font-size: 1.2rem;
 }
 
-.divBotonesEncriptado{ 
+.text-input__buttons{ 
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
 }
 
-.buttonEncriptar{
+.text-input__button--encrypt{
     font-family: var(--fuente-inter);
     font-weight: 400;
     border-radius: 2.4rem;
@@ -116,7 +116,7 @@ opacity: 1;
     font-size: 1.6rem;
 }
 
-.buttonDesencriptar{
+.text-input__button--decrypt{
     font-family: var(--fuente-inter);
     font-weight: 400;
     border-radius: 2.4rem;
@@ -128,17 +128,17 @@ opacity: 1;
     background-color: var(--color-dos);
 }
 
-.divImgTextoNoEncontrado{
+.result__icon-container{
     object-fit: contain;
     display: flex;
     justify-content: center;
 }
 
-.imgTextoNoEncontrado{
+.result__img{
     display: none;
 }
 
-.divTextoEncriptado{
+.result{
     padding: 3.2rem;
     margin-top: 3.7rem;
     margin-bottom: 2rem;
@@ -150,7 +150,7 @@ opacity: 1;
     border-radius: 32px;
 }
 
-.divTextoEncriptado h1{
+.result__tittle{
     font-family: var(--fuente-inter);
     font-weight: 700;
     font-size: 2.4rem;
@@ -158,7 +158,7 @@ opacity: 1;
     color: var(--color-quinto);
 }
 
-.divTextoEncriptado p{
+.result__message{
     font-family: var(--fuente-inter);
     font-weight: 400;
     font-size: 1.6rem;
@@ -166,7 +166,7 @@ opacity: 1;
     color: var(--color-tres);
 }
 
-.divMostrarTextoEncriptado{
+.out-result{
     padding: 3.2rem;
     margin-top: 3.7rem;
     margin-bottom: 2rem;
@@ -178,7 +178,7 @@ opacity: 1;
     border-radius: 32px;
 }
 
-.pMostrarTextoTratado{
+.out-result__message{
     font-family: var(--fuente-inter);
     font-weight: 400;
     font-size: 2.4rem;
@@ -190,7 +190,7 @@ opacity: 1;
     text-align: left;
 }
 
-.buttonCopiarTexto{
+.out-result__button--copy{
     font-family: var(--fuente-inter);
     font-weight: 400;
     border-radius: 2.4rem;
@@ -202,7 +202,7 @@ opacity: 1;
     background-color: var(--color-cuatro);  
 }
 
-.page__footer{
+.page-footer{
     color:var(--color-dos);
     background-color: var(--color-tres);
     padding: 2.4rem;
@@ -214,19 +214,19 @@ opacity: 1;
 
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-        .divBotonesEncriptado{ 
+        .text-input__buttons{ 
             flex-direction: row;
         }
-        .divIconoEmuladorHeader{
+        .encrypt__simulate-header{
             display: none;
         }
-        .main{
+        .page-main{
             padding: 0 3.2rem;
         }
-        .page__header{
+        .page-header{
             padding: 6.4rem 0 6.4rem 3.2rem;
         }
-        .imgTextoNoEncontrado{
+        .result__img{
             display: none;
         }
 }
@@ -234,30 +234,30 @@ opacity: 1;
 
 @media only screen and (min-width: 1024px) {
     
-    .page__header{
+    .page-header{
         display: none;
     }
-    .divIconoEmuladorHeader{
+    .encrypt__simulate-header{
         display: block;
         padding-left: 4rem;
     }
-    .main{
+    .page-main{
         flex-direction: row;
         padding: 4rem 4rem 4rem 4rem;
         gap: 4rem;
     }
-    .seccionIngresarTexto{
+    .encrypt{
         width: 66.6%;
         display: flex;
         flex-direction: column;
     }
-    .divTextoIngresado{
+    .text-input__field{
         height: 60vh;
     }
-    .divBotonesEncriptado{ 
+    .text-input__buttons{ 
         flex-direction: row;
     }
-    .sectionIngresarTexto{
+    .text-input{
        /*  width: 66.6%; */
         padding-left: 20rem;
         padding-right: 4rem;
@@ -266,32 +266,32 @@ opacity: 1;
         height: 100%;
         overflow: auto;
     }
-    .sectionTextoEncriptado {
+    .show-result {
         width: 33.4%;
        /*  display: flex;
         flex-direction: column; */
     }
-    .divTextoEncriptado {
+    .result {
         height: 100%;
         justify-content: center;
         margin-top: unset;
         margin-bottom: unset;
     }
-    .imgTextoNoEncontrado{
+    .result__img{
         display: block;
     }
-     .sectionMostrarTextoEncriptado{
+     .show-encryption{
         /* position: relative; */
         width: 33.4%;
         /* margin-top: -40px;
         height: 100%; */
     }
-    .divMostrarTextoEncriptado{
+    .out-result{
         height: auto;
         margin-top: unset;
         margin-bottom: unset;
     }
-    .pMostrarTextoTratado {
+    .out-result__message {
         height: 62vh;
     }
 }

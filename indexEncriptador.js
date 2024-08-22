@@ -1,11 +1,11 @@
 const textarea = document.getElementById('textoIngresado');
-const btnEncriptar = document.querySelector('.buttonEncriptar');
-const btnDesencriptar = document.querySelector('.buttonDesencriptar');
-const textoParaEncriptar = document.querySelector('.textoParaEncriptar');
-const pMostrarTexto = document.querySelector('.pMostrarTextoTratado');
-const sectionTextoEncriptadoNoEncontrado = document.querySelector('.sectionTextoEncriptado');
-const sectionTextoEncriptadoEncontrado = document.querySelector('.sectionMostrarTextoEncriptado');
-const btnCopiarTextoTratado = document.querySelector('.buttonCopiarTexto');
+const btnEncriptar = document.querySelector('.text-input__button--encrypt');
+const btnDesencriptar = document.querySelector('.text-input__button--decrypt');
+const textoParaEncriptar = document.querySelector('.text-input__field-textarea');
+const pMostrarTexto = document.querySelector('.out-result__message');
+const sectionTextoEncriptadoNoEncontrado = document.querySelector('.show-result');
+const sectionTextoEncriptadoEncontrado = document.querySelector('.show-encryption');
+const btnCopiarTextoTratado = document.querySelector('.out-result__button--copy');
 
 
 // Evento de input para ajustar la altura cuando el usuario escribe
