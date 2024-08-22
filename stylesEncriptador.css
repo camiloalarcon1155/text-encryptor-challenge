@@ -18,7 +18,7 @@ html {
     font-size: 62.5%; 
 }
 
-body{
+.page{
     background-color:  var(--color-dos);
     display: flex;
     flex-direction: column;
@@ -202,7 +202,7 @@ opacity: 1;
     background-color: var(--color-cuatro);  
 }
 
-.footer{
+.page__footer{
     color:var(--color-dos);
     background-color: var(--color-tres);
     padding: 2.4rem;
@@ -223,7 +223,7 @@ opacity: 1;
         .main{
             padding: 0 3.2rem;
         }
-        .page-header{
+        .page__header{
             padding: 6.4rem 0 6.4rem 3.2rem;
         }
         .imgTextoNoEncontrado{
@@ -234,7 +234,7 @@ opacity: 1;
 
 @media only screen and (min-width: 1024px) {
     
-    .page-header{
+    .page__header{
         display: none;
     }
     .divIconoEmuladorHeader{
