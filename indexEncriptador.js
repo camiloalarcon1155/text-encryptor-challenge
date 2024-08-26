@@ -16,13 +16,15 @@ btnCopiarTextoTratado.addEventListener('click', copiarTextoTratado)
 textarea.addEventListener('input', function() {
     ValidarTexto(this);
 });
+
+/* 
 textarea.addEventListener('focus', seleccionarTexto);
 textarea.addEventListener('click', seleccionarTexto);
 textarea.addEventListener('touchstart', seleccionarTexto);
 
 function seleccionarTexto() {
     textarea.select();
-}
+} */
 
 //Funcion para admitir solamente letras minusculas o espacios, si no borra elemento mal escrito y crea un alert
 function ValidarTexto(textarea) {
