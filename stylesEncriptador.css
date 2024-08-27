@@ -18,7 +18,7 @@
     --color-seis:#ffffff;
     --color-siete:#503C3C;
 
-    --color-hover: #185abd;
+    --color-hover: #603F26;
     --fuente-inter: "Inter", sans-serif;
 }
 
@@ -124,6 +124,12 @@ html {
     background-color: var(--color-uno);
     color: var(--color-seis);
     font-size: 1.6rem;
+    cursor: pointer;
+    
+}
+
+.text-input__button--encrypt:hover{
+    background-color: var(--color-hover);
 }
 
 .text-input__button--decrypt{
@@ -136,6 +142,12 @@ html {
     font-size: 1.6rem;
     border: 2px solid var(--color-uno);
     background-color: var(--color-dos);
+    cursor: pointer;
+    
+}
+
+.text-input__button--decrypt:hover{
+    background-color: var(--color-hover);
 }
 
 .result__icon-container{
@@ -209,7 +221,12 @@ html {
     color: var(--color-uno);
     font-size: 1.6rem;
     border: 2px solid var(--color-dos); 
-    background-color: var(--color-dos);  
+    background-color: var(--color-dos); 
+    cursor: pointer; 
+}
+
+.out-result__button--copy:hover{
+    background-color: var(--color-hover);
 }
 
 .page-footer{
@@ -220,8 +237,19 @@ html {
     font-family: var(--fuente-inter);
     font-size: 1.2rem;
     font-weight: 400;
+    
 }
 
+.page-footer__text{
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.page-footer__text:hover{
+    color: var(--color-quinto);
+    font-weight: 800;
+}
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     #textoIngresado {

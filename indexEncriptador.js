@@ -6,6 +6,8 @@ const pMostrarTexto = document.querySelector('.out-result__message');
 const sectionTextoEncriptadoNoEncontrado = document.querySelector('.show-result');
 const sectionTextoEncriptadoEncontrado = document.querySelector('.show-encryption');
 const btnCopiarTextoTratado = document.querySelector('.out-result__button--copy');
+const nombreDesarrollador = document.querySelector('.page-footer__text');
+const logoAlura = document.querySelector('.encrypt__img');
 
 
 // Evento de input para ajustar la altura cuando el usuario escribe
@@ -16,6 +18,7 @@ btnCopiarTextoTratado.addEventListener('click', copiarTextoTratado)
 textarea.addEventListener('input', function() {
     ValidarTexto(this);
 });
+
 
 
 //Funcion para admitir solamente letras minusculas o espacios, si no borra elemento mal escrito y crea un alert
