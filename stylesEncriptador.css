@@ -256,16 +256,20 @@ html {
         display: flex;
         flex-direction: column;
     }
-    .text-input__field{
-        height: 53vh;
-    }
-    .text-input__buttons{ 
-        flex-direction: row;
-    }
     .text-input{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
         padding-left: 20rem;
         padding-right: 4rem;
         padding-bottom:1.5rem;
+    }
+    .text-input__field{
+        height: 53vh;
+        flex-grow: 1;
+    }
+    .text-input__buttons{ 
+        flex-direction: row;
     }
     #textoIngresado{
         height: 100%;
@@ -279,6 +283,7 @@ html {
         justify-content: center;
         margin-top: unset;
         margin-bottom: unset;
+        padding: 3.2rem 3.2rem 1.5rem 3.2rem;
     }
     .result__img{
         display: block;
@@ -288,12 +293,13 @@ html {
         width: 33.4%;
     }
     .out-result{
-        height: auto;
+        height: 100%;
         margin-top: unset;
         margin-bottom: unset;
         padding: 3.2rem 3.2rem 1.5rem 3.2rem;
     }
     .out-result__message {
         height: 56vh;
+        flex-grow: 1;
     }
 }
