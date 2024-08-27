@@ -1,0 +1,37 @@
+# Dependencias y paquetes
+node_modules/
+
+# Directorios de construcción y salida
+dist/
+build/
+
+# Archivos de logs
+*.log
+
+# Archivos temporales
+*.tmp
+*.swp
+*.swo
+
+# Archivos de configuración del entorno (para no incluir credenciales)
+.env
+.env.local
+.env.development
+.env.production
+
+# Archivos de caché
+.cache/
+*.cache
+
+# Archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Configuración de IDEs y editores
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Documentación generada automáticamente
+docs/
