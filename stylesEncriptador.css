@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --color-uno:#0A3871;
     --color-dos: #F3F5FC;
     --color-tres:#495057;
@@ -6,7 +6,18 @@
     --color-quinto:#343A40;
     --color-hover: #185abd;
     --fuente-inter: "Inter", sans-serif;
+} */
+
+:root {
+    --color-uno:#BEADFA;
+    --color-dos: #7469B6;
+    --color-tres:#543310;
+    --color-cuatro:#A67B5B;
+    --color-quinto:#343A40;
+    --color-hover: #185abd;
+    --fuente-inter: "Inter", sans-serif;
 }
+
 
 * {
     box-sizing: border-box;
