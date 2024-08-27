@@ -31,7 +31,7 @@ function ValidarTexto(textarea) {
     const isTextoValido = textarea.value.match(/^[a-z\s]*$/);
 
     if (!isTextoValido) {
-        alert('solo minusculas y espacios');
+        alert('Ingresar sólo minúsculas y sin acentos');
         textarea.value = textarea.value.slice(0, -1);
     } 
 }
