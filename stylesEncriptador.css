@@ -15,7 +15,7 @@
 }
 
 html {
-    font-size: 62.5%; 
+    font-size: 62.5%;
 }
 
 .app{
@@ -78,10 +78,6 @@ html {
     color: var(--color-uno);
     opacity: 1;
 }
-
-/* #textoIngresado:focus{
-    background-color: var(--color-dos);
-} */
 
 .text-input__warning{
     display: flex;
@@ -213,24 +209,24 @@ html {
 
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-        #textoIngresado {
-            height: 22.8rem;
-        }
-        .text-input__buttons{ 
-            flex-direction: row;
-        }
-        .encrypt__simulate-header{
-            display: none;
-        }
-        .page-main{
-            padding: 0 3.2rem;
-        }
-        .page-header{
-            padding: 6.4rem 0 6.4rem 3.2rem;
-        }
-        .result__img{
-            display: none;
-        }
+    #textoIngresado {
+        height: 22.8rem;
+    }
+    .text-input__buttons{ 
+        flex-direction: row;
+    }
+    .encrypt__simulate-header{
+        display: none;
+    }
+    .page-main{
+        padding: 0 3.2rem;
+    }
+    .page-header{
+        padding: 6.4rem 0 6.4rem 3.2rem;
+    }
+    .result__img{
+        display: none;
+    }
 }
 
 
@@ -289,7 +285,6 @@ html {
         display: block;
     }
      .show-encryption{
-        /* position: relative; */
         width: 33.4%;
     }
     .out-result{

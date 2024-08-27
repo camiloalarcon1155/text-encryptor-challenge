@@ -17,14 +17,6 @@ textarea.addEventListener('input', function() {
     ValidarTexto(this);
 });
 
-/* 
-textarea.addEventListener('focus', seleccionarTexto);
-textarea.addEventListener('click', seleccionarTexto);
-textarea.addEventListener('touchstart', seleccionarTexto);
-
-function seleccionarTexto() {
-    textarea.select();
-} */
 
 //Funcion para admitir solamente letras minusculas o espacios, si no borra elemento mal escrito y crea un alert
 function ValidarTexto(textarea) {
@@ -37,7 +29,7 @@ function ValidarTexto(textarea) {
 }
 
 
-// Función para ajustar la altura del textarea segun el contenido
+// Función para ajustar la altura del textarea segun el contenido. solo se deja para dispositivos moviles y tablets
 function autoResize() {
     let anchoViewport = window.innerWidth < 1024;
     if (anchoViewport) {
