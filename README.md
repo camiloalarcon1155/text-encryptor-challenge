@@ -75,8 +75,7 @@ Esta sección muestra el estado actual del proyecto mediante insignias informati
 
 - **Acceso al Proyecto en Línea**: Puedes ver y usar el proyecto en línea a través del siguiente enlace: [Encriptador de Texto BCAH](https://camiloalarcon1155.github.io/text-encryptor-challenge/).
 
-- **Código Fuente del Proyecto**: El código fuente está disponible en GitHub. Puedes acceder al repositorio del proyecto aquí: [Repositorio en GitHub](https://github.com/camiloalarcon1155/text-encryptor-challenge).
-El repositorio consta de 2 ramas: main e improvements. En la rama main se encuentra el archivo base del proyecto, con todas las especificaciones pedidas en el challenge de Alura Latam. En la rama improvements se encuentran algunos cambios hechos al proyecto como personalizaciones en el layout o uso de funciones y pseudoclases.
+- **Código Fuente del Proyecto**: El código fuente está disponible en GitHub. Puedes acceder al repositorio del proyecto aquí: [Repositorio en GitHub](https://github.com/camiloalarcon1155/text-encryptor-challenge/tree/improvements). El repositorio consta de 2 ramas: main e improvements. En la rama main se encuentra la primera parte del challenge con la mayoria de las especificaciones basicas, pedidas en el challenge de Alura Latam. En la rama improvements se encuentran algunos cambios hechos al proyecto como personalizaciones en el layout o uso de funciones y pseudoclases, ademas de la incorporacion del archivo README.md, el archivo .gitignore. La rama improvements contiene el contenido completo del challenge.
 
 
 
