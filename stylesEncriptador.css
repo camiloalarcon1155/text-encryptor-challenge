@@ -66,7 +66,7 @@ html {
     background-color:  var(--color-dos);
     font-size: 3.2rem;
     width: 100%;
-    height: 20.8rem;
+    height: 16.8rem;
     line-height: 4.8rem;
     border: none;
     outline: none;
@@ -204,17 +204,17 @@ html {
 .page-footer{
     color:var(--color-dos);
     background-color: var(--color-tres);
-    padding: 2.4rem;
+    padding: 0.7rem;
     text-align: center;
     font-family: var(--fuente-inter);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400;
 }
 
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
         #textoIngresado {
-            height: 40.8rem;
+            height: 22.8rem;
         }
         .text-input__buttons{ 
             flex-direction: row;
@@ -243,6 +243,9 @@ html {
         display: block;
         padding-left: 4rem;
     }
+    .encrypt__img{
+        height: 4.8rem;
+    }
     .page-main{
         flex-direction: row;
         padding: 4rem 4rem 4rem 4rem;
@@ -254,7 +257,7 @@ html {
         flex-direction: column;
     }
     .text-input__field{
-        height: 58vh;
+        height: 53vh;
     }
     .text-input__buttons{ 
         flex-direction: row;
@@ -262,6 +265,7 @@ html {
     .text-input{
         padding-left: 20rem;
         padding-right: 4rem;
+        padding-bottom:1.5rem;
     }
     #textoIngresado{
         height: 100%;
@@ -287,8 +291,9 @@ html {
         height: auto;
         margin-top: unset;
         margin-bottom: unset;
+        padding: 3.2rem 3.2rem 1.5rem 3.2rem;
     }
     .out-result__message {
-        height: 62vh;
+        height: 56vh;
     }
 }
