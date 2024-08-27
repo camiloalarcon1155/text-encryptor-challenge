@@ -76,7 +76,7 @@ Esta sección muestra el estado actual del proyecto mediante insignias informati
 - **Acceso al Proyecto en Línea**: Puedes ver y usar el proyecto en línea a través del siguiente enlace: [Encriptador de Texto BCAH](https://camiloalarcon1155.github.io/text-encryptor-challenge/).
 
 - **Código Fuente del Proyecto**: El código fuente está disponible en GitHub. Puedes acceder al repositorio del proyecto aquí: [Repositorio en GitHub](https://github.com/camiloalarcon1155/text-encryptor-challenge).
-
+El repositorio consta de 2 ramas: main e improvements. En la rama main se encuentra el archivo base del proyecto, cons todas las especificaciones pedidas en el challenge de Alura Latam. y en la rama improvements se encuentrana algunos cambios hechos al proyecto. mejoras personales
 
 
 
